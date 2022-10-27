@@ -9,7 +9,7 @@ pipeline {
         }
         stage('vpc-build') {
             steps {
-                sh 'awscli.sh'
+                sh '/home/ubuntu/remote_root/workspace/de-vpc-1-cli/awscli.sh'
             }
         }
     }
