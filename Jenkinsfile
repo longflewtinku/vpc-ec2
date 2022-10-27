@@ -9,7 +9,8 @@ pipeline {
         }
         stage('vpc-build') {
             steps {
-                sh 'awscli.sh'
+                sh 'chmod 777 /home/ubuntu/remote_root/workspace/de-vpc-1-cli/awscli.sh'
+                sh '/home/ubuntu/remote_root/workspace/de-vpc-1-cli/awscli.sh'
             }
         }
     }
