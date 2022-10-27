@@ -9,9 +9,7 @@ pipeline {
         }
         stage('vpc-build') {
             steps {
-                sh 'aws ec2 create-vpc \
-                        --cidr-block "10.0.0.0/16" \
-                        --region "us-west-2"'
+                sh 'awscli.sh'
             }
         }
     }
