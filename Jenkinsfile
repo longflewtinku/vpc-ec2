@@ -4,7 +4,7 @@ pipeline {
         stage('vcs') {
             steps {
                 git url: 'https://github.com/longflewtinku/vpc-ec2.git',
-                    git branch: 'main'
+                    branch: 'main'
             }
         }
         stage('vpc-build') {
