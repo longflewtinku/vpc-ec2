@@ -29,7 +29,7 @@ Vpc_Id=$(aws ec2 create-vpc \
 
 # create Public subnet
 Subnet_Id=$(aws ec2 create-subnet \
-  --Vpc-Id $Vpc_Id \
+  --vpc-id $Vpc_Id \
   --cidr-block $SUBNET_CIDR \
   --availability-zone $SUBNET_AZ \
   --tag-specifications "ResourceType=subnet,Tags=[{Key=Name,Value=Jenkins_Subnet}]" \
