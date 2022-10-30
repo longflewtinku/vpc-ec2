@@ -2,7 +2,7 @@
 
 # aws cli create ec2 instance in shell script
 #*********************************************
-REGION= "ap-south-1"
+REGION="ap-south-1"
 VPC_CIDR="10.0.0.0/16"
 SUBNET_CIDR="10.0.0.0/24"
 SUBNET_AZ="ap-south-1a"
@@ -165,14 +165,4 @@ echo "Instance $Instance_Id is starting, go to console and stop it if you don't 
 #    --instance-ids $Instance_Id /
 #    --region $REGION /
 #    --output text
-#echo "Instance Stopped for $Instance_Id"    
-
-
-
-# Start ec2 instance
-#aws ec2 start-instances /
-#   --instance-ids $Instance_Id /
-#  --region $REGION
-
-
-
+echo "Instance Stopped for $Instance_Id"    
