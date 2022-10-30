@@ -176,5 +176,3 @@ echo "Instance $Instance_Id is starting, go to console and stop it if you don't 
 
 
 
-
-
