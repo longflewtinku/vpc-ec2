@@ -165,4 +165,14 @@ echo "Instance $Instance_Id is starting, go to console and stop it if you don't 
 #    --instance-ids $Instance_Id /
 #    --region $REGION /
 #    --output text
-echo "Instance Stopped for $Instance_Id"    
+echo Instance Stopped for $Instance_Id    
+
+
+
+# Start ec2 instance
+#aws ec2 start-instances /
+#   --instance-ids $Instance_Id /
+#  --region $REGION
+
+
+
