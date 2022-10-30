@@ -9,7 +9,7 @@ pipeline {
         }
         stage('vpc-build') {
             steps {
-                sh 'sh awscli.sh'
+                sh 'sh awscli1.sh'
             }
         }
     }
