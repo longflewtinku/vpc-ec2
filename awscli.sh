@@ -35,7 +35,7 @@ Subnet_Id=$(aws ec2 create-subnet \
   --tag-specifications "ResourceType=subnet,Tags=[{Key=Name,Value=Jenkins_Subnet}]" \
   --output text \
   --region $REGION \
-  --qury 'Subnet.SubnetId')
+  --query 'Subnet.SubnetId')
   echo Subnet_Id = "$Subnet_Id"
   
 
