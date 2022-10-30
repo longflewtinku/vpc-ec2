@@ -11,7 +11,7 @@ SECURITY_GROUP_NAME="Jenkins-Sg"
 PROTOCOL="tcp"
 MUMBAI_AMI_ID="ami-024c319d5d14b463e"
 INSTANCE_TYPE="t2.micro"
-KEY_PAIR="jenkina key"
+KEY_PAIR="jenkinskey"
 INSTANCES_COUNT="1"
 #======================================================
 # dont modify code below
