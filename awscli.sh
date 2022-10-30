@@ -9,9 +9,9 @@ SUBNET_AZ="ap-south-1a"
 DESTINATION_CIDR="0.0.0.0/0"
 SECURITY_GROUP_NAME="Jenkins-Sg"
 PROTOCOL="tcp"
-OREGON_AMI_ID="ami-024c319d5d14b463e"
+MUMBAI_AMI_ID="ami-024c319d5d14b463e"
 INSTANCE_TYPE="t2.micro"
-KEY_PAIR="standard"
+KEY_PAIR="jenkina key"
 INSTANCES_COUNT="1"
 #======================================================
 # dont modify code below
@@ -141,7 +141,7 @@ echo 8080_Sg_Id = "$Sg_Rule_Id3"
 
 # create ec2 instance
 Instance_Id=$(aws ec2 run-instances \
-    --image-id $OREGON_AMI_ID \
+    --image-id $MUMBAI_AMI_ID \
     --instance-type $INSTANCE_TYPE \
     --key-name $KEY_PAIR \
     --security-group-ids $Security_GroupId \
